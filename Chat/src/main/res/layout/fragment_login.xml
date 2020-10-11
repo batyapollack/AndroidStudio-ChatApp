@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPinkWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Login">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+
+        android:id= "@+id/toolBar"
+        layout="@layout/bar_layout"
+        />
+
+
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+       android:layout_below="@id/toolBar">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"
+
+            >
+
+        </ImageView>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id= "@+id/email"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint= "Email"
+            android:inputType = "textEmailAddress"
+
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id= "@+id/password"
+            android:layout_marginTop="10dp"
+            app:met_floatingLabel="normal"
+            android:hint= "Password"
+            android:inputType = "textPassword"
+            />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot your password?"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            />
+
+<!--        <View-->
+<!--            android:layout_marginTop="60sp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="@color/colorBlack"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="OR"-->
+<!--            ></TextView>-->
+
+
+<!--        <com.facebook.login.widget.LoginButton-->
+<!--            android:id="@+id/loginButtonFacebbook"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="50sp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="30dp"-->
+
+<!--            />-->
+
+
+
+    </LinearLayout>
+</RelativeLayout>

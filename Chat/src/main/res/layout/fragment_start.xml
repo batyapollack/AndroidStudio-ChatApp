@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/colorPink"
+    android:orientation="vertical"
+    tools:context=".Fragments.Start">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        >
+
+    </ImageView>
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ChatApp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_marginTop="100sp"
+        android:id="@+id/login"
+        android:padding="16dp"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Login"
+        />
+
+
+    <Button
+
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Register"
+        />
+
+</LinearLayout>

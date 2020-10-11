@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/Login"
+        android:name="com.chat.Fragments.Login"
+        android:label="Login" >
+
+        <action
+            android:id="@+id/action_Login_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_Login_to_resetPassword"
+            app:destination="@id/resetPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.chat.Fragments.Register"
+        android:label="fragment_home_page"
+        tools:layout="@layout/register_fragment" >
+        <action
+            android:id="@+id/action_register_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.chat.Fragments.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_startFragment"
+            app:destination="@id/startFragment" />
+        <action
+            android:id="@+id/action_homePage_to_msgFragment"
+            app:destination="@id/msgFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.chat.Fragments.Start"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_Login"
+            app:destination="@id/Login" />
+        <action
+            android:id="@+id/action_startFragment_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_startFragment_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/msgFragment"
+        android:name="com.chat.Fragments.Msg"
+        android:label="fragment_msg"
+        tools:layout="@layout/fragment_msg" />
+    <fragment
+        android:id="@+id/resetPassword"
+        android:name="com.chat.Fragments.ResetPassword"
+        android:label="fragment_reset_password"
+        tools:layout="@layout/fragment_reset_password" />
+</navigation>
